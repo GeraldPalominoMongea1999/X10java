@@ -1,0 +1,100 @@
+harvard consigue un nuevo record en computacion cuantica. ¿que significa
+esto?
+harvard ha anunciado la creacion del ordenador cuantico mas potente del
+mundo hasta la fecha. con 51 qubits, la universidad americana consigue
+adjudicarse el record actual de una carrera frenetica entre grandes compañias
+y centros de investigacion.
+es curioso que una universidad, por muy prestigiosa que sea, haya adelantado a
+gigantes como google por el carril de la derecha. la compañia del famoso
+buscador anuncio hace no mucho que estaba desarrollando un computador de
+49 qubits, el cual aventuraban iba a convertirse en pionero. harvard ha creado
+el suyo antes y con mayor poder de calculo.
+
+en ciencia es muy positivo que organismos publicos, privados y de educacion
+desarrollen e investiguen en paralelo, como en este caso. gracias a esta
+competitividad, se acelerara el progreso.
+¿que es la computacion cuantica?
+una buena explicacion, nos la da el primer ministro de canada, justin trudeau:
+para entender la computacion cuantica, primero hay que entender la
+computacion clasica.
+en la computacion clasica, es decir, la que se usa a dia de hoy y que tienen
+nuestros pcs, moviles, equipos electronicos y, en general, todo aquello que
+tenga un equipo que procese datos, la unidad de medida de la informacion es el
+bit. los transistores y otros elementos electronicos que componen la
+informatica que conocemos, se basan en un criterio de la informacion en la que
+la unidad minima de informacion posible, puede tomar el valor de 0 o de 1. nada
+mas. es como decir que un interruptor puede estar encendido o apagado; no
+puede tener estados intermedios.
+la computacion basada en estados binarios, de unos y ceros, nos ha permitido
+conseguir cosas increibles. gracias a partir de algo tan sencillo, escalar el
+concepto ha sido relativamente directo en estas decadas. al final, procesar mas
+o menos datos viene a estar relacionado con poner mas o menos de esos
+interruptores. encendido o apagado; dos estados muy diferenciables que hacen
+que, pese a que tengamos millones de millones de interruptores actuando al
+mismo tiempo, podamos leerlos y activarlos con cierta facilidad.
+la idea de la computacion cuantica surge en 1981, cuando paul benioff expuso su
+teoria para aprovechar las leyes cuanticas en el entorno de la computacion. la
+fisica cuantica es muy rara. muy, muy rara. en la computacion cuantica,
+intervienen las leyes de la mecanica cuantica, las cuales establecen que una
+particula puede estar en superposicion coherente, es decir, puede ser 0 o 1… pero
+tambien puede ser 0 y 1 a la vez. esto permite que se puedan realizar varias
+operaciones de forma simultanea, segun el numero de qubits.
+el problema es que las leyes fisicas del mundo macroscopico, el de los humanos,
+son muy distintas a las leyes del mundo atomico. nos es dificil entenderlas. en el
+mundo atomico, la cuantica hace de las suyas.
+para reflejar lo complicado que es explicar la computacion cuantica, os
+traemos las palabras de michael nielsen:
+“imagina que pudiera darte una explicacion simple y completa, acerca de como
+funciona un ordenador cuantico. si la explicacion fuera correcta al 100%, esto
+significaria que podriamos usar ordenadores convencionales para simular
+todos los elementos de un ordenador cuantico.
+por supuesto, esto es absurdo. lo que pasa es que no hay ninguna explicacion
+simple y concreta de como funcionan los ordenadores cuanticos. al contrario,
+existe un hueco intrinseco entre como funcionan, y nuestra habilidad para
+explicarlos en terminos simples y concretos.”
+en otras palabras, es un terreno desconocido incluso para los mayores
+expertos.
+¿para que queremos computacion cuantica?
+
+parece que los avances en informatica y en computacion han sido grandiosos
+hasta la fecha. cada vez tenemos mas capacidad de computacion en dispositivos
+mas pequeños. un movil de hoy en dia tiene mayores capacidades que todos los
+medios de computacion que tenia la nasa cuando puso al hombre en la luna en
+1969.
+el problema actual es que la computacion clasica empieza a llegar a su limite.
+dentro de poco no vamos a poder hacer las cosas mas pequeñas. ademas, a
+medida que hacemos chips mas diminutos, comenzamos a rondar “el mundo de
+lo muy pequeño”, en otras palabras, el mundo de la fisica cuantica. asi pues, lo
+normal es investigar esta area para hacer un nuevo tipo de computadores.
+¿que beneficios traera la computacion cuantica?
+la principal area que se van a beneficiar de esta tecnologia es la encriptacion
+cuantica. mas adelante os hablamos un poco mas de la misma. ademas, la
+inteligencia artificial y ciertas operaciones muy complejas o relacionadas con
+datos masivos, encontraran una nueva pista donde poder acelerarse.
+aunque no se puede comparar de forma directa, se suele decir que un
+computador cuantico de 30 qubits equivaldria a un procesador convencional de
+10 teraflops (10 millones de millones de operaciones en coma flotante por
+segundo), cuando actualmente las computadoras trabajan en el orden de
+gigaflops (miles de millones de operaciones).
+ademas de universidades y centros de investigacion, ¿quien esta investigando en
+el campo?
+pues ibm, google, facebook, microsoft, atos, airbus… un numero elevadisimo de
+empresas que estan poniendo toda la carne en el asador, para estar preparados
+cuando esta tecnologia, alla por el 2025 y 2030 dicen, se haga una realidad.
+¿que cambios veremos en nuestro dia a dia?
+aunque seguramente no la veamos en nuestros hogares, ciertos sectores se
+encontraran con un nuevo paradigma. la computacion, que en definitiva mueve
+nuestro mundo, tendra una nueva herramienta. eso por si solo nos alerta que
+tenemos que estar pendientes de la evolucion de esta tecnologia.
+nadie tiene claro el alcance real que tendra la computacion cuantica, pero muy
+seguramente la forma en la que la informacion se usa y se transfiere cambiara
+radicalmente. los sistemas de encriptacion tradicionales no serviran para nada,
+pues cualquier ordenador cuantico podra descifrar cualquier clave tradicional
+en cuestion de segundos. tendremos que crear nuevas estrategias de seguridad,
+un nuevo estatus de encriptacion cuantica para todo y un nuevo uso de los
+datos. internet se asentara sobre otros principios los cuales, aunque
+probablemente nos seran iguales en apariencia, tendran implicaciones
+tecnologicas muy profundas. la fisica cuantica tendra que ser impartida en
+carreras de informatica y apareceran nuevas profesiones. matematicos y fisicos
+tendran mucho que decir en las empresas donde este nuevo modo de
+computacion tenga que ser usado.

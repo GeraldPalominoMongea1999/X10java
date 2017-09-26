@@ -1,0 +1,58 @@
+/**
+ * The canonical "Hello, World" demo class expressed in X10
+ */
+
+public class Hello {
+
+    //sin paralelisar 
+	public static def divisores (var x:Long):Rail[Long]{
+		val v=new Rail[Long](18);
+		var c2:Long=1;
+		var aux:Long=x;
+		for(var j:Long=2;j<Math.sqrt(aux);j++){
+			//Console.OUT.println("j="+j);
+			//Console.OUT.println("x%j="+x%j);
+			while(x%j==0){
+				v(c2)=j;
+				x=x/j;
+				c2++;
+			}
+		}
+		if (x!=1){
+			v(c2)=x;
+			v(0)=c2;
+		}else{
+			
+			v(0)=c2-1;
+		}
+		
+		return v;
+	}
+	public static def factorisar1(x:Long):Rail[Long]{
+		// el primero elemto de v es el numero y lo demas son los vectores
+		// toamos a 2 como el meonor divisor
+		// es improbable que el numero de divisores sea enor que 16 pues 100000<2^17
+		var v1:Rail[Long];
+		var v2:Rail[Long]; 
+		v1=divisores(x);
+		
+		for (var i:Long=x-1;i>0;i--){
+			v2=divisores(i);
+			if (v2(0)>v1(0))
+				v1=v2;
+		}
+			
+		return v1;
+	}
+	
+	/**
+     * The main method for the Hello class
+     */
+    public static def main(Rail[String]) {
+        /*finish for (p in Place.places()) {
+            at (p) async Console.OUT.println("Hello World from place "+p.id);
+        }*/
+    	Console.OUT.print(divisores(30)+" "+ 7%5);
+    }
+
+}

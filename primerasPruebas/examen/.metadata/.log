@@ -1,0 +1,1161 @@
+!SESSION 2017-09-25 16:00:00.124 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=es_PE
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2017-09-25 16:03:29.695
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.imp.pdb.indexing.Indexer.registerDocument(Indexer.java:506)
+	at org.eclipse.imp.editor.UniversalEditor.createPartControl(UniversalEditor.java:750)
+	at x10dt.ui.editor.X10Editor.createPartControl(X10Editor.java:53)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:141)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor.createPartControl(CompatibilityEditor.java:99)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:327)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:888)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:869)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:120)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:337)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:258)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:162)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:104)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:55)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:127)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:983)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl$1.handleEvent(PartServiceImpl.java:95)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:187)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:156)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4734)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:218)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:36)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:81)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:59)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:171)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:488)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:454)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:705)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1142)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3210)
+	at org.eclipse.ui.internal.WorkbenchPage.access$23(WorkbenchPage.java:3125)
+	at org.eclipse.ui.internal.WorkbenchPage$9.run(WorkbenchPage.java:3107)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3102)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3066)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3047)
+	at org.eclipse.ui.ide.IDE.openEditorOnFileStore(IDE.java:1139)
+	at org.eclipse.ui.internal.ide.actions.OpenLocalFileAction.run(OpenLocalFileAction.java:107)
+	at org.eclipse.ui.internal.ide.actions.OpenLocalFileAction.run(OpenLocalFileAction.java:76)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:253)
+	at org.eclipse.ui.internal.WWinPluginAction.runWithEvent(WWinPluginAction.java:237)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:595)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:511)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:420)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2017-09-25 16:04:02.656
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.imp.pdb.indexing.Indexer.registerDocument(Indexer.java:506)
+	at org.eclipse.imp.editor.UniversalEditor.createPartControl(UniversalEditor.java:750)
+	at x10dt.ui.editor.X10Editor.createPartControl(X10Editor.java:53)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:141)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor.createPartControl(CompatibilityEditor.java:99)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:327)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:888)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:869)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:120)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:337)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:258)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:162)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:104)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:55)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:127)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:983)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl$1.handleEvent(PartServiceImpl.java:95)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:187)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:156)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4734)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:218)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:36)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:81)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:59)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:171)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:488)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:454)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:705)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.bringToTop(PartServiceImpl.java:392)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1145)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3210)
+	at org.eclipse.ui.internal.WorkbenchPage.access$23(WorkbenchPage.java:3125)
+	at org.eclipse.ui.internal.WorkbenchPage$9.run(WorkbenchPage.java:3107)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3102)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3066)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3047)
+	at org.eclipse.ui.ide.IDE.openEditorOnFileStore(IDE.java:1139)
+	at org.eclipse.ui.internal.ide.actions.OpenLocalFileAction.run(OpenLocalFileAction.java:107)
+	at org.eclipse.ui.internal.ide.actions.OpenLocalFileAction.run(OpenLocalFileAction.java:76)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:253)
+	at org.eclipse.ui.internal.WWinPluginAction.runWithEvent(WWinPluginAction.java:237)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:595)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:511)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:420)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:11:53.504
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:11:53.504
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:12:00.102
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:12:00.104
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:12:21.659
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:12:21.660
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:12:29.377
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:12:29.379
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:13:30.636
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:13:30.637
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:14:48.672
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:14:48.674
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:14:56.560
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:14:56.561
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:21:33.904
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:21:33.905
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY x10dt.ui.launch.core 4 0 2017-09-25 16:25:12.299
+!MESSAGE An Exception occurred while compiling.
+!STACK 0
+java.lang.IllegalArgumentException: Path must include project and resource name: /
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:63)
+	at org.eclipse.core.internal.resources.Workspace.newResource(Workspace.java:2137)
+	at org.eclipse.core.internal.resources.Container.getFile(Container.java:208)
+	at x10dt.ui.launch.core.builder.X10ErrorQueue.displayError(X10ErrorQueue.java:61)
+	at polyglot.util.AbstractErrorQueue.enqueue(Unknown Source)
+	at x10.errors.Errors.issue(Unknown Source)
+	at x10.errors.Errors.issue(Unknown Source)
+	at x10.errors.Errors.issue(Unknown Source)
+	at polyglot.ast.Import_c.typeCheck(Unknown Source)
+	at polyglot.ast.JL_c.typeCheck(Unknown Source)
+	at x10.visit.X10TypeChecker.leaveCall(Unknown Source)
+	at polyglot.visit.ErrorHandlingVisitor.leaveCall(Unknown Source)
+	at polyglot.visit.ErrorHandlingVisitor.leave(Unknown Source)
+	at polyglot.visit.ContextVisitor.leave(Unknown Source)
+	at polyglot.visit.NodeVisitor.visitEdgeNoOverride(Unknown Source)
+	at polyglot.visit.NodeVisitor.visitEdge(Unknown Source)
+	at polyglot.ast.Node_c.visitChild(Unknown Source)
+	at polyglot.ast.Node_c.visitList(Unknown Source)
+	at polyglot.ast.SourceFile_c.visitChildren(Unknown Source)
+	at polyglot.ast.JL_c.visitChildren(Unknown Source)
+	at x10.extension.X10Del_c.visitChildren(Unknown Source)
+	at polyglot.visit.NodeVisitor.visitEdgeNoOverride(Unknown Source)
+	at polyglot.visit.NodeVisitor.visitEdge(Unknown Source)
+	at polyglot.ast.Node_c.visit(Unknown Source)
+	at polyglot.frontend.ForgivingVisitorGoal.runTask(Unknown Source)
+	at polyglot.frontend.Scheduler.runPass(Unknown Source)
+	at x10.ExtensionInfo$X10Scheduler.runPass(Unknown Source)
+	at x10dt.ui.launch.java.builder.JavaBuilderExtensionInfo$1.runPass(JavaBuilderExtensionInfo.java:56)
+	at polyglot.frontend.AbstractGoal_c.run(Unknown Source)
+	at polyglot.types.LazyRef_c.get(Unknown Source)
+	at polyglot.frontend.AbstractGoal_c.run(Unknown Source)
+	at polyglot.types.LazyRef_c.get(Unknown Source)
+	at polyglot.frontend.AbstractGoal_c.run(Unknown Source)
+	at polyglot.types.LazyRef_c.get(Unknown Source)
+	at polyglot.frontend.AbstractGoal_c.run(Unknown Source)
+	at polyglot.types.LazyRef_c.get(Unknown Source)
+	at polyglot.frontend.AbstractGoal_c.run(Unknown Source)
+	at polyglot.types.LazyRef_c.get(Unknown Source)
+	at polyglot.frontend.AbstractGoal_c.run(Unknown Source)
+	at polyglot.types.LazyRef_c.get(Unknown Source)
+	at polyglot.frontend.AbstractGoal_c.run(Unknown Source)
+	at polyglot.types.LazyRef_c.get(Unknown Source)
+	at polyglot.frontend.AbstractGoal_c.run(Unknown Source)
+	at polyglot.types.LazyRef_c.get(Unknown Source)
+	at polyglot.frontend.AbstractGoal_c.run(Unknown Source)
+	at polyglot.types.LazyRef_c.get(Unknown Source)
+	at polyglot.frontend.AbstractGoal_c.run(Unknown Source)
+	at polyglot.types.LazyRef_c.get(Unknown Source)
+	at polyglot.frontend.AbstractGoal_c.run(Unknown Source)
+	at polyglot.types.LazyRef_c.get(Unknown Source)
+	at polyglot.frontend.AbstractGoal_c.run(Unknown Source)
+	at polyglot.types.LazyRef_c.get(Unknown Source)
+	at polyglot.frontend.AbstractGoal_c.run(Unknown Source)
+	at polyglot.types.LazyRef_c.get(Unknown Source)
+	at polyglot.frontend.AbstractGoal_c.run(Unknown Source)
+	at polyglot.types.LazyRef_c.get(Unknown Source)
+	at polyglot.frontend.AbstractGoal_c.run(Unknown Source)
+	at polyglot.types.LazyRef_c.get(Unknown Source)
+	at polyglot.frontend.AbstractGoal_c.run(Unknown Source)
+	at polyglot.types.LazyRef_c.get(Unknown Source)
+	at polyglot.frontend.AbstractGoal_c.run(Unknown Source)
+	at polyglot.types.LazyRef_c.get(Unknown Source)
+	at polyglot.frontend.AbstractGoal_c.run(Unknown Source)
+	at polyglot.types.LazyRef_c.get(Unknown Source)
+	at polyglot.frontend.AbstractGoal_c.run(Unknown Source)
+	at polyglot.types.LazyRef_c.get(Unknown Source)
+	at polyglot.frontend.AbstractGoal_c.run(Unknown Source)
+	at polyglot.types.LazyRef_c.get(Unknown Source)
+	at polyglot.frontend.AbstractGoal_c.run(Unknown Source)
+	at polyglot.types.LazyRef_c.get(Unknown Source)
+	at polyglot.frontend.AbstractGoal_c.run(Unknown Source)
+	at polyglot.types.LazyRef_c.get(Unknown Source)
+	at polyglot.frontend.AbstractGoal_c.run(Unknown Source)
+	at polyglot.types.LazyRef_c.get(Unknown Source)
+	at polyglot.frontend.AbstractGoal_c.run(Unknown Source)
+	at polyglot.types.LazyRef_c.get(Unknown Source)
+	at polyglot.frontend.AbstractGoal_c.run(Unknown Source)
+	at polyglot.types.LazyRef_c.get(Unknown Source)
+	at polyglot.frontend.AbstractGoal_c.run(Unknown Source)
+	at polyglot.types.LazyRef_c.get(Unknown Source)
+	at polyglot.frontend.AbstractGoal_c.run(Unknown Source)
+	at polyglot.types.LazyRef_c.get(Unknown Source)
+	at polyglot.frontend.Scheduler.attempt(Unknown Source)
+	at polyglot.frontend.Scheduler.runToCompletion(Unknown Source)
+	at polyglot.frontend.Scheduler.runToCompletion(Unknown Source)
+	at polyglot.frontend.Compiler.compile(Unknown Source)
+	at polyglot.frontend.Compiler.compileFiles(Unknown Source)
+	at x10dt.ui.launch.core.builder.AbstractX10Builder.compileX10Files(AbstractX10Builder.java:734)
+	at x10dt.ui.launch.core.builder.AbstractX10Builder.access$4(AbstractX10Builder.java:712)
+	at x10dt.ui.launch.core.builder.AbstractX10Builder$5.run(AbstractX10Builder.java:557)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at x10dt.ui.launch.core.builder.AbstractX10Builder.compile(AbstractX10Builder.java:565)
+	at x10dt.ui.launch.core.builder.AbstractX10Builder.build(AbstractX10Builder.java:199)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:27:45.779
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:27:45.779
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:28:02.380
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:28:02.381
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:28:22.831
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:28:22.832
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:28:32.157
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:28:32.158
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY x10dt.ui.launch.java 4 0 2017-09-25 16:28:47.748
+!MESSAGE Working directory '/examen/bin' does not contain the main type name.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:31:13.760
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:31:13.761
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:37:10.164
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:37:10.165
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:37:16.425
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:37:16.428
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:37:29.292
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:37:29.298
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.jface 4 0 2017-09-25 16:38:47.140
+!MESSAGE The command ("org.eclipse.imp.runtime.editor.folding.collapseComments") is undefined
+!STACK 0
+java.lang.Exception
+	at org.eclipse.jface.action.ExternalActionManager$CommandCallback.isActive(ExternalActionManager.java:381)
+	at org.eclipse.jface.action.ActionContributionItem.isCommandActive(ActionContributionItem.java:656)
+	at org.eclipse.jface.action.ActionContributionItem.isVisible(ActionContributionItem.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.reconcileManagerToModel(MenuManagerRenderer.java:1017)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.reconcileManagerToModel(MenuManagerRenderer.java:960)
+	at org.eclipse.ui.internal.PopupMenuExtender.addMenuContributions(PopupMenuExtender.java:420)
+	at org.eclipse.ui.internal.PopupMenuExtender.menuAboutToShow(PopupMenuExtender.java:393)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:352)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:492)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:487)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:519)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:255)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:4963)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4639)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1626)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:256)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4213)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3755)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:38:56.714
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:38:56.716
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:39:15.671
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:39:15.673
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:39:29.051
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:39:29.053
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:51:25.829
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:51:25.830
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:51:59.030
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 16:51:59.032
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:03:52.464
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:03:52.465
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:04:03.575
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:04:03.576
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:04:11.067
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:04:11.073
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:04:17.050
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:04:17.052
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:05:10.444
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:05:10.444
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:05:31.465
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:05:31.466
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:10:09.502
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:10:09.503
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:11:16.483
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:11:16.483
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:12:05.786
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:12:05.788
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:12:24.647
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:12:24.651
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:19:15.489
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:19:15.490
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:33:21.962
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:33:21.963
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:33:45.800
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:33:45.802
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:34:03.297
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:34:03.300
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:34:42.019
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:34:42.020
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:35:08.743
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:35:08.746
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:44:47.644
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:44:47.645
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:44:57.386
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:44:57.387
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:45:33.523
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:45:33.524
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:45:48.077
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:45:48.078
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:45:53.634
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:45:53.636
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:46:09.275
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:46:09.276
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:49:46.738
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:49:46.739
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:50:59.269
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:50:59.270
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:51:33.624
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:51:33.627
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:52:52.196
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:52:52.196
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:53:03.305
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:53:03.306
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:54:23.135
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:54:23.136
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:55:00.131
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:55:00.134
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:55:20.611
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:55:20.612
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:55:45.956
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:55:45.956
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:57:02.659
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:57:02.663
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:57:44.871
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:57:44.871
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:59:52.691
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 17:59:52.692
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY x10dt.ui.launch.java 4 0 2017-09-25 18:00:35.547
+!MESSAGE Working directory '/examen/bin' does not contain the main type name.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:00:50.135
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:00:50.137
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:03:13.143
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:03:13.144
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:03:53.114
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:03:53.115
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:04:14.860
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:04:14.860
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:04:28.816
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:04:28.818
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:04:32.233
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:04:32.234
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:04:56.897
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:04:56.898
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:05:31.198
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:05:31.199
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:05:48.018
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:05:48.018
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:06:17.427
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:06:17.429
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:06:33.721
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:06:33.722
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:06:59.577
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:06:59.579
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:09:34.045
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:09:34.046
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:11:42.632
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:11:42.634
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:12:24.472
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:12:24.472
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:16:28.368
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:16:28.369
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:17:53.818
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:17:53.818
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:18:11.176
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:18:11.176
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:18:46.311
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:18:46.311
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:20:31.685
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:20:31.685
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:21:49.952
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:21:49.953
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:21:58.996
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:21:58.998
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:23:40.310
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:23:40.315
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:24:05.271
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:24:05.272
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:24:30.351
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:24:30.352
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:25:56.525
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:25:56.526
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:29:09.308
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:29:09.308
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:37:39.291
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:37:39.292
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:38:03.537
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:38:03.537
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:39:18.100
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:39:18.102
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:41:36.374
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:41:36.375
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY x10dt.ui.launch.java 4 0 2017-09-25 18:49:05.823
+!MESSAGE Working directory '/examen/bin' does not contain the main type name.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:49:18.497
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:49:18.503
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:49:39.044
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:49:39.046
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:56:49.604
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:56:49.605
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:58:09.484
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:58:09.485
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:58:28.490
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 18:58:28.491
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 19:04:03.109
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 19:04:03.110
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 19:04:35.434
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 19:04:35.435
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 19:06:05.667
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 19:06:05.668
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 19:06:20.789
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.useHostFile is not of type int.
+
+!ENTRY org.eclipse.debug.core 4 5012 2017-09-25 19:06:20.794
+!MESSAGE Attribute x10dt.ui.launch.cpp.launchAttrs.hostList is not of type java.lang.String.
+
+!ENTRY org.eclipse.e4.ui.workbench.swt 4 2 2017-09-25 19:08:43.959
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.e4.ui.workbench.swt".
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:62)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:888)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.disposed(InjectorImpl.java:390)
+	at org.eclipse.e4.core.internal.di.Requestor.disposed(Requestor.java:143)
+	at org.eclipse.e4.core.internal.contexts.ContextObjectSupplier$ContextInjectionListener.update(ContextObjectSupplier.java:76)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:107)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.handleInvalid(TrackableComputationExt.java:70)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.dispose(EclipseContext.java:175)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.clearContext(PartRenderingEngine.java:974)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:954)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$3(PartRenderingEngine.java:862)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$8.run(PartRenderingEngine.java:857)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:841)
+	at org.eclipse.ui.internal.WorkbenchWindow.hardClose(WorkbenchWindow.java:1937)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1560)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$15(WorkbenchWindow.java:1527)
+	at org.eclipse.ui.internal.WorkbenchWindow$10.run(WorkbenchWindow.java:1592)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1589)
+	at org.eclipse.ui.internal.Workbench$14.run(Workbench.java:1155)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1137)
+	at org.eclipse.ui.internal.Workbench.access$21(Workbench.java:1079)
+	at org.eclipse.ui.internal.Workbench$19.run(Workbench.java:1410)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1407)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1380)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1556)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$15(WorkbenchWindow.java:1527)
+	at org.eclipse.ui.internal.WorkbenchWindow$10.run(WorkbenchWindow.java:1592)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1589)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1603)
+	at org.eclipse.ui.internal.WorkbenchWindow$6.close(WorkbenchWindow.java:521)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer$11.shellClosed(WBWRenderer.java:563)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:98)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1070)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:308)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1696)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4612)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1626)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:498)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4705)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1626)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:498)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4705)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1626)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4441)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.SWT.error(SWT.java:4327)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:476)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:348)
+	at org.eclipse.swt.widgets.Shell.getSize(Shell.java:1092)
+	at org.eclipse.ui.internal.quickaccess.SearchField.storeDialog(SearchField.java:580)
+	at org.eclipse.ui.internal.quickaccess.SearchField.dispose(SearchField.java:557)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	... 88 more
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2017-09-25 19:08:43.963
+!MESSAGE Exception occurred while unrendering: org.eclipse.e4.ui.model.application.ui.basic.impl.TrimmedWindowImpl@a903b (elementId: IDEWindow, tags: [topLevel, shellMaximized], contributorURI: platform:/plugin/org.eclipse.ui.workbench) (widget: null, renderer: null, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null) (label: %trimmedwindow.label.eclipseSDK, iconURI: null, tooltip: null, context: null, variables: [], x: 485, y: -30, width: 1024, height: 768)
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:62)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:888)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.disposed(InjectorImpl.java:390)
+	at org.eclipse.e4.core.internal.di.Requestor.disposed(Requestor.java:143)
+	at org.eclipse.e4.core.internal.contexts.ContextObjectSupplier$ContextInjectionListener.update(ContextObjectSupplier.java:76)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:107)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.handleInvalid(TrackableComputationExt.java:70)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.dispose(EclipseContext.java:175)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.clearContext(PartRenderingEngine.java:974)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:954)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$3(PartRenderingEngine.java:862)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$8.run(PartRenderingEngine.java:857)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:841)
+	at org.eclipse.ui.internal.WorkbenchWindow.hardClose(WorkbenchWindow.java:1937)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1560)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$15(WorkbenchWindow.java:1527)
+	at org.eclipse.ui.internal.WorkbenchWindow$10.run(WorkbenchWindow.java:1592)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1589)
+	at org.eclipse.ui.internal.Workbench$14.run(Workbench.java:1155)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1137)
+	at org.eclipse.ui.internal.Workbench.access$21(Workbench.java:1079)
+	at org.eclipse.ui.internal.Workbench$19.run(Workbench.java:1410)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1407)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1380)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1556)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$15(WorkbenchWindow.java:1527)
+	at org.eclipse.ui.internal.WorkbenchWindow$10.run(WorkbenchWindow.java:1592)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1589)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1603)
+	at org.eclipse.ui.internal.WorkbenchWindow$6.close(WorkbenchWindow.java:521)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer$11.shellClosed(WBWRenderer.java:563)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:98)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1070)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:308)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1696)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4612)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1626)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:498)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4705)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1626)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:498)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4705)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1626)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4441)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.SWT.error(SWT.java:4327)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:476)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:348)
+	at org.eclipse.swt.widgets.Shell.getSize(Shell.java:1092)
+	at org.eclipse.ui.internal.quickaccess.SearchField.storeDialog(SearchField.java:580)
+	at org.eclipse.ui.internal.quickaccess.SearchField.dispose(SearchField.java:557)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	... 88 more

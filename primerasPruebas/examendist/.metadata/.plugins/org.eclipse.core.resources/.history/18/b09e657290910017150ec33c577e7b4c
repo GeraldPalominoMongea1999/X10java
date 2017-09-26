@@ -1,0 +1,170 @@
+/**
+ * The canonical "Hello, World" demo class expressed in X10
+ */
+
+public class Hello {
+
+    //sin paralelisar 
+	public static def divisores (var x:Long):Rail[Long]{
+		val v=new Rail[Long](18);
+		var c2:Long=2;
+		var aux:Long=x;
+		v(1)=x;
+		for(var j:Long=2;j<Math.sqrt(aux) && j <=x ;j++){
+			//Console.OUT.println("j="+j);
+			//Console.OUT.println("x%j="+x%j);
+			while(x%j==0){
+				v(c2)=j;
+				x=x/j;
+				c2++;
+			}
+		}
+		if (x!=1){
+			v(c2)=x;
+			v(0)=c2;
+		}else{
+			
+			v(0)=c2-1;
+		}
+		
+		return v;
+	}
+	public static def factorisar1(x:Long):Rail[Long]{
+		// el primero elemto de v es el numero y lo demas son los vectores
+		// toamos a 2 como el meonor divisor
+		// es improbable que el numero de divisores sea enor que 16 pues 100000<2^17
+		var v1:Rail[Long];
+		var v2:Rail[Long]; 
+		v1=divisores(x);
+		
+		for (var i:Long=x-1;i>0;i--){
+			v2=divisores(i);
+			if (v2(0)>v1(0))
+				v1=v2;
+		}
+			
+		return v1;
+	}
+	public static def imprimir(v:Rail[Long]){
+		Console.OUT.println("el numero es :"+v(1));
+		Console.OUT.println("tiene  :"+v(0)+" divisiores propios");
+		for (var i:Long=2;i<18 && v(i)!=0 ;i++)
+		Console.OUT.print(v(i)+" x ");
+		Console.OUT.println();
+	}
+	// paralisando 
+	//sin paralelisar 
+	public static def divisores2 (var x:Long):Rail[Long]{
+		val v=new Rail[Long](18);
+		var c2:Long=2;
+		var aux:Long=x;
+		v(1)=x;
+		for(var j:Long=2;j<Math.sqrt(aux) && j <=x ;j++){
+			//Console.OUT.println("j="+j);
+			//Console.OUT.println("x%j="+x%j);
+			while(x%j==0){
+				v(c2)=j;
+				x=x/j;
+				c2++;
+			}
+		}
+		if (x!=1){
+			v(c2)=x;
+			v(0)=c2;
+		}else{
+			
+			v(0)=c2-1;
+		}
+		
+		return v;
+	}
+	public static def factorisar2(x:Long):Rail[Long]{
+		// el primero elemto de v es el numero y lo demas son los vectores
+		// toamos a 2 como el meonor divisor
+		// es improbable que el numero de divisores sea enor que 16 pues 100000<2^17
+		var v1:Rail[Long];
+		var v2:Rail[Long]; 
+		v1=divisores(x);
+		
+		finish{
+			async for (var i:Long=x-1;i>9*x/10;i--){
+				atomic v2=divisores2(i);
+				if (v2(0)>v1(0)){
+					atomic v1=v2;
+					imprimir(v1);
+				}	
+			}
+			async for (var i:Long=9*x/10;i>8*x/10;i--){
+				atomic v2=divisores2(i);
+				if (v2(0)>v1(0)){
+					atomic v1=v2;
+					imprimir(v1);
+				}	
+			}
+			async for (var i:Long=8*x/10;i>7*x/10;i--){
+				atomic v2=divisores2(i);
+				if (v2(0)>v1(0)){
+					atomic v1=v2;
+					imprimir(v1);
+				}	
+			}
+			async for (var i:Long=7*x/10;i>6*x/10;i--){
+				atomic v2=divisores2(i);
+				if (v2(0)>v1(0)){
+					atomic v1=v2;
+					imprimir(v1);
+				}	
+			}
+			async for (var i:Long=6*x/10;i>5*x/10;i--){
+				atomic v2=divisores2(i);
+				if (v2(0)>v1(0)){
+					atomic v1=v2;
+					imprimir(v1);
+				}	
+			}
+			async for (var i:Long=5*x/10;i>4*x/10;i--){
+				atomic v2=divisores2(i);
+				if (v2(0)>v1(0))
+					atomic v1=v2;
+			}
+			async for (var i:Long=3*x/10;i>3*x/10;i--){
+				atomic v2=divisores2(i);
+				if (v2(0)>v1(0))
+					atomic v1=v2;
+			}
+			async for (var i:Long=2*x/10;i>2*x/10;i--){
+				atomic v2=divisores2(i);
+				if (v2(0)>v1(0))
+					atomic v1=v2;
+			}
+			async for (var i:Long=1*x/10;i>1*x/10;i--){
+				atomic v2=divisores2(i);
+				if (v2(0)>v1(0))
+					atomic v1=v2;
+			}
+			async for (var i:Long=1*x/10;i>0;i--){
+				atomic v2=divisores2(i);
+				if (v2(0)>v1(0))
+					atomic v1=v2;
+			}
+		}
+		return v1;
+	}
+
+	/**
+     * The main method for the Hello class
+     */
+    public static def main(Rail[String]) {
+        /*finish for (p in Place.places()) {
+            at (p) async Console.OUT.println("Hello World from place "+p.id);
+        }*/
+    	//Console.OUT.println(divisores(30)+" "+ 7%5);
+    	Console.OUT.println("sin paralelisar");
+    	
+    	imprimir(factorisar1(100000));
+    	Console.OUT.println(" paralelisando");
+    	
+    	imprimir(factorisar2(100000));
+    }
+
+}
